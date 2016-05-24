@@ -65,19 +65,15 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Fraction *myFraction;
-        
-        myFraction = [[Fraction alloc] init];
-        //myFraction = [myFraction init];
-        
-        [myFraction setNumberator:1];
-        [myFraction setDenominator:3];
-        
-        [myFraction setNumberator:1
-                  withDenominator:3];
-        
-        NSLog(@"The value of myFraction is: %i/%i",[myFraction numerator], [myFraction denominator]);
-        [myFraction print];
+        int a=25;
+        int b=2;
+        float c=25.0;
+        float d=2.0;
+       
+        NSLog(@"6+a/5*b=%i",6+a/5*b);
+        NSLog(@"a/b*b=%i",a/b*b);
+        NSLog(@"c/d*d=%f",c/d*d);
+        NSLog(@"-a=%i",-a);
 
     }
     return 0;
