@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Fraction.h"
 
 // ---implementation --
 
