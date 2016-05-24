@@ -65,15 +65,23 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        int a=25;
-        int b=5;
-        int c=10;
-        int d=7;
-       
-        NSLog(@"a %% b=%i",a % b);
-        NSLog(@"a %% c=%i",a % c);
-        NSLog(@"a %% d=%i",a % d);
-        NSLog(@"a / d * d + a %% d=%i",a / d * d + a % d);
+        float f1=123.125,f2;
+        int i1,i2=-150;
+        
+        i1=f1;
+        NSLog(@"%f assigned to an int produces %i", f1, i1);
+        
+        f1=i2;
+        NSLog(@"%i assigned to an float produces %f", i2, f1);
+        
+        f1=i2/100;
+        NSLog(@"%i divided by 100 produces %f", i2,f1);
+        
+        f2=i2/100.0;
+        NSLog(@"%i divided by 100.0 produces %f", i2,f2);
+        
+        f2=(float)i2/100;
+        NSLog(@"(float)%i divided by 100 produces %f", i2,f2);
 
     }
     return 0;
