@@ -13,12 +13,16 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int n, triangularNumber;
         
+        NSLog(@"TABLE OF TRIANGULAR NUMBERS");
+        NSLog(@" n  Sum from 1 to n");
+        NSLog(@"--  ----------");
+        
         triangularNumber=0;
         
-        for(n=1;n <= 200;n=n+1)
+        for(n=1; n <=10;++n){
             triangularNumber +=n;
-        
-        NSLog(@"The 200th triangular number is %i", triangularNumber);
+            NSLog(@"%i        %i",n,triangularNumber);
+        }
 
     }
     return 0;
