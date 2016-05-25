@@ -11,17 +11,19 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int n, triangularNumber;
+        int n, number, triangularNumber, counter;
+
+
+        for(counter=1;counter <=5;++counter){
+            NSLog(@"What triangular number do you want?");
+            scanf("%i",&number);
+            
+            triangularNumber=0;
         
-        NSLog(@"TABLE OF TRIANGULAR NUMBERS");
-        NSLog(@" n  Sum from 1 to n");
-        NSLog(@"--  ----------");
-        
-        triangularNumber=0;
-        
-        for(n=1; n <=10;++n){
-            triangularNumber +=n;
-            NSLog(@"%i        %i",n,triangularNumber);
+            for(n=1; n <=number;++n){
+                triangularNumber +=n;
+            }
+             NSLog(@"Triangular number %i is %i",number,triangularNumber);
         }
 
     }
