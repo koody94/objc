@@ -21,21 +21,30 @@ int main(int argc, const char * argv[]) {
         
         [deskCalc setAccumulator: value1];
         
-        if(operator == '+')
-            [deskCalc add: value2];
-        else if(operator == '-')
-            [deskCalc subtract: value2];
-        else if(operator == '*')
-            [deskCalc multiply: value2];
-        else if(operator == '/')
-            if(value2 == 0)
-                NSLog(@"Division by zero.");
-            else
-                [deskCalc divide: value2];
-        else
-            NSLog(@"Unknown operator.");
+        switch(operator){
+            case '+':
+                [deskCalc add: value2];
+                break;
+            case '-':
+                [deskCalc subtract: value2];
+                break;
+            case '*':
+                [deskCalc multiply: value2];
+                break;
+            case '/':
+                if(value2 == 0)
+                    NSLog(@"Division by zero.");
+                else
+                    [deskCalc divide: value2];
+                break;
+            default:
+                 NSLog(@"Unknown operator.");
+                break;
+        }
         
         NSLog(@"%.2f",[deskCalc accumulator]);
+        
+        [deskCalc release];
         
     }
     return 0;
