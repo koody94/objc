@@ -15,14 +15,9 @@
 
 @property int numerator,denominator;
 - (void)print;
-//- (void)setNumberator : (int) n;
-//- (void)setDenominator : (int) d;
-- (BOOL)setNumberator:(int)n withDenominator:(int)d;
-
-//- (int) numerator;
-//- (int) denominator;
 - (void) setTo:(int)n over:(int)d;
 - (double) convertNum;
+- (void) add: (Fraction *) f;
 @end
 
 #endif /* Fraction_h */

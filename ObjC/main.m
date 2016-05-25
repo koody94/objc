@@ -12,20 +12,26 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        Fraction *myFraction=[[Fraction alloc]init];
-//        
-//        myFraction.numerator=1;
-//        myFraction.denominator=3;
-//        
-//        NSLog(@"The numerator is %i, and the denominator is %i",
-//              myFraction.numerator,myFraction.denominator);
+
         Fraction *aFraction = [[Fraction alloc]init];
+        Fraction *bFraction = [[Fraction alloc]init];
         
-        [aFraction setTo:100 over:200];
+        //두 분수를 1/4과 1/2로 설정하고 둘을 더한다.
+        [aFraction setTo:1 over:4];
+        [bFraction setTo:1 over:2];
+        
+        [aFraction print];
+        NSLog(@"+");
+        
+        [bFraction print];
+        NSLog(@"=");
+        
+        [aFraction add: bFraction];
         [aFraction print];
         
-        [aFraction setTo:1 over:3];
-        [aFraction print];
+        [aFraction release];
+        [bFraction release];
+        
     }
     return 0;
 }

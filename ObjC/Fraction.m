@@ -13,25 +13,12 @@
 
 @implementation Fraction
 @synthesize numerator, denominator;
-//{
-//    int numerator;
-//    int denominator;
-//}
 
 - (void) print
 {
     NSLog(@"%i/%i", numerator, denominator);
 }
 
-//- (void) setNumberator:(int)n
-//{
-//    numerator = n;
-//}
-//
-//- (void) setDenominator:(int)d
-//{
-//    denominator=d;
-//}
 
 - (BOOL) setNumberator:(int)n withDenominator:(int)d
 {
@@ -40,16 +27,6 @@
     
     return YES;
 }
-
-//- (int) numerator
-//{
-//    return numerator;
-//}
-//
-//- (int) denominator
-//{
-//    return denominator;
-//}
 
 - (double) convertNum
 {
@@ -63,6 +40,14 @@
 {
     numerator=n;
     denominator=d;
+}
+
+-(void) add: (Fraction *) f
+{
+    //두 분수를 더하려면:
+    //a/b+c/d = ((a*d)+(b*c))/(b*d)
+    numerator=numerator*f.denominator + denominator*f.numerator;
+    denominator=denominator * f.denominator;
 }
 
 @end
