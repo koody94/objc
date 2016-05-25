@@ -18,6 +18,7 @@
 - (void) setTo:(int)n over:(int)d;
 - (double) convertNum;
 - (void) add: (Fraction *) f;
+- (void) reduce;
 @end
 
 #endif /* Fraction_h */

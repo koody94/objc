@@ -27,6 +27,9 @@ int main(int argc, const char * argv[]) {
         NSLog(@"=");
         
         [aFraction add: bFraction];
+        
+        //덧셈 결과를 약분하고 표시한다.
+        [aFraction reduce];
         [aFraction print];
         
         [aFraction release];
