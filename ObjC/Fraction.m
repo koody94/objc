@@ -12,25 +12,26 @@
 // ---implementation --
 
 @implementation Fraction
-{
-    int numerator;
-    int denominator;
-}
+@synthesize numerator, denominator;
+//{
+//    int numerator;
+//    int denominator;
+//}
 
 - (void) print
 {
     NSLog(@"%i/%i", numerator, denominator);
 }
 
-- (void) setNumberator:(int)n
-{
-    numerator = n;
-}
-
-- (void) setDenominator:(int)d
-{
-    denominator=d;
-}
+//- (void) setNumberator:(int)n
+//{
+//    numerator = n;
+//}
+//
+//- (void) setDenominator:(int)d
+//{
+//    denominator=d;
+//}
 
 - (BOOL) setNumberator:(int)n withDenominator:(int)d
 {
@@ -40,15 +41,15 @@
     return YES;
 }
 
-- (int) numerator
-{
-    return numerator;
-}
-
-- (int) denominator
-{
-    return denominator;
-}
+//- (int) numerator
+//{
+//    return numerator;
+//}
+//
+//- (int) denominator
+//{
+//    return denominator;
+//}
 
 - (double) convertNum
 {
@@ -56,6 +57,12 @@
         return (double) numerator /denominator;
     else
         return NAN;
+}
+
+-(void) setTo:(int)n over:(int)d
+{
+    numerator=n;
+    denominator=d;
 }
 
 @end

@@ -12,40 +12,20 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        double value1, value2;
-        char operator;
-        Calculator *deskCalc = [[Calculator alloc]init];
+//        Fraction *myFraction=[[Fraction alloc]init];
+//        
+//        myFraction.numerator=1;
+//        myFraction.denominator=3;
+//        
+//        NSLog(@"The numerator is %i, and the denominator is %i",
+//              myFraction.numerator,myFraction.denominator);
+        Fraction *aFraction = [[Fraction alloc]init];
         
-        NSLog(@"Type in your expression");
-        scanf("%lf %c %lf",&value1, &operator,&value2);
+        [aFraction setTo:100 over:200];
+        [aFraction print];
         
-        [deskCalc setAccumulator: value1];
-        
-        switch(operator){
-            case '+':
-                [deskCalc add: value2];
-                break;
-            case '-':
-                [deskCalc subtract: value2];
-                break;
-            case '*':
-                [deskCalc multiply: value2];
-                break;
-            case '/':
-                if(value2 == 0)
-                    NSLog(@"Division by zero.");
-                else
-                    [deskCalc divide: value2];
-                break;
-            default:
-                 NSLog(@"Unknown operator.");
-                break;
-        }
-        
-        NSLog(@"%.2f",[deskCalc accumulator]);
-        
-        [deskCalc release];
-        
+        [aFraction setTo:1 over:3];
+        [aFraction print];
     }
     return 0;
 }

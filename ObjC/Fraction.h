@@ -12,13 +12,16 @@
 
 // --- 인터페이스 --
 @interface Fraction : NSObject
+
+@property int numerator,denominator;
 - (void)print;
-- (void)setNumberator : (int) n;
-- (void)setDenominator : (int) d;
+//- (void)setNumberator : (int) n;
+//- (void)setDenominator : (int) d;
 - (BOOL)setNumberator:(int)n withDenominator:(int)d;
 
-- (int) numerator;
-- (int) denominator;
+//- (int) numerator;
+//- (int) denominator;
+- (void) setTo:(int)n over:(int)d;
 - (double) convertNum;
 @end
 
