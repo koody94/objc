@@ -11,13 +11,16 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int count=1;
+        int number, right_digit;
         
-        while (count <=5){
-            NSLog(@"%i",count);
-            ++count;
-        }
-
+        NSLog(@"Enter your nuber.");
+        scanf("%i",&number);
+        
+        do{
+            right_digit=number %10;
+            NSLog(@"%i",right_digit);
+            number /=10;
+        }while( number !=0);
     }
     return 0;
 }
