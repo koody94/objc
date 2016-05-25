@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
+#import "Calculator.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -20,10 +21,13 @@ int main(int argc, const char * argv[]) {
         [aFraction print];
         NSLog(@" =");
         NSLog(@"%g",[aFraction convertNum]);
-        
+
         [bFraction print];
         NSLog(@" =");
         NSLog(@"%g",[bFraction convertNum]);
+        
+        [aFraction release];
+        [bFraction release];
         
 
     }
