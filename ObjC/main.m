@@ -12,24 +12,19 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *aFraction = [[Fraction alloc]init];
-        Fraction *bFraction = [[Fraction alloc]init];
+        int year, rem_4, rem_100, rem_400;
         
-        [aFraction setNumberator:1];
-        [aFraction setDenominator:4];
+        NSLog(@"Enter the year to be tested: ");
+        scanf("%i", &year);
         
-        [aFraction print];
-        NSLog(@" =");
-        NSLog(@"%g",[aFraction convertNum]);
-
-        [bFraction print];
-        NSLog(@" =");
-        NSLog(@"%g",[bFraction convertNum]);
+        rem_4=year % 4;
+        rem_100=year %100;
+        rem_400 = year %400;
         
-        [aFraction release];
-        [bFraction release];
-        
-
+        if((rem_4==0 && rem_100!=0)||rem_400==0)
+            NSLog(@"It's a leap year");
+        else
+            NSLog(@"Nope, it's not a leap year");
     }
     return 0;
 }
