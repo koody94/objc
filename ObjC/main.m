@@ -10,29 +10,37 @@
 #import "Fraction.h"
 #import "Calculator.h"
 
+@interface ClassA: NSObject
+{
+    int x;
+}
+
+-(void) initVar;
+@end
+
+@implementation ClassA
+- (void) initVar
+{
+    x=100;
+}
+@end
+
+@interface ClassB: ClassA
+-(void) printVar;
+@end
+
+@implementation ClassB
+- (void) printVar
+{
+    NSLog(@"x=%i",x);
+}
+@end
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-        Fraction *aFraction = [[Fraction alloc]init];
-        Fraction *bFraction = [[Fraction alloc]init];
-        Fraction *resultFraction;
+        ClassB *b=[[ClassB alloc]init];
         
-        //두 분수를 1/4과 1/2로 설정하고 둘을 더한다.
-        [aFraction setTo:1 over:4];
-        [bFraction setTo:1 over:2];
-        
-        [aFraction print];
-        NSLog(@"+");
-        
-        [bFraction print];
-        NSLog(@"=");
-
-        resultFraction= [aFraction add: bFraction];
-        
-        //덧셈 결과를 약분하고 표시한다.
-        [resultFraction print];
-        
-        [aFraction release];
+        [b initVar];
+        [b printVar];
         
     }
     return 0;
