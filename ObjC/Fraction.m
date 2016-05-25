@@ -12,7 +12,7 @@
 // ---implementation --
 
 @implementation Fraction
-@synthesize numerator, denominator;
+@synthesize numerator, denominator, bFraction;
 
 - (void) print
 {
@@ -42,12 +42,22 @@
     denominator=d;
 }
 
--(void) add: (Fraction *) f
+-(Fraction *) add: (Fraction *) f
 {
     //두 분수를 더하려면:
     //a/b+c/d = ((a*d)+(b*c))/(b*d)
-    numerator=numerator*f.denominator + denominator*f.numerator;
-    denominator=denominator * f.denominator;
+    
+    Fraction *result=[[Fraction alloc]init];
+    
+    if(bFraction)
+        [bFraction release];
+        
+    bFraction = [f retain];
+    result.numerator=numerator*f.denominator + denominator*f.numerator;
+    result.denominator=denominator * f.denominator;
+    
+    [result reduce];
+    return [result autorelease];
 }
 
 -(void) reduce
@@ -65,6 +75,11 @@
     
     numerator /=u;
     denominator /=u;
+}
+
+- (void)dealloc{
+    [bFraction release];
+    [super dealloc];
 }
 
 @end

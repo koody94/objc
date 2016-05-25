@@ -15,6 +15,7 @@ int main(int argc, const char * argv[]) {
 
         Fraction *aFraction = [[Fraction alloc]init];
         Fraction *bFraction = [[Fraction alloc]init];
+        Fraction *resultFraction;
         
         //두 분수를 1/4과 1/2로 설정하고 둘을 더한다.
         [aFraction setTo:1 over:4];
@@ -25,15 +26,13 @@ int main(int argc, const char * argv[]) {
         
         [bFraction print];
         NSLog(@"=");
-        
-        [aFraction add: bFraction];
+
+        resultFraction= [aFraction add: bFraction];
         
         //덧셈 결과를 약분하고 표시한다.
-        [aFraction reduce];
-        [aFraction print];
+        [resultFraction print];
         
         [aFraction release];
-        [bFraction release];
         
     }
     return 0;

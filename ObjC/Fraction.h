@@ -14,10 +14,11 @@
 @interface Fraction : NSObject
 
 @property int numerator,denominator;
+@property (retain) Fraction *bFraction;
 - (void)print;
 - (void) setTo:(int)n over:(int)d;
 - (double) convertNum;
-- (void) add: (Fraction *) f;
+- (Fraction *) add: (Fraction *) f;
 - (void) reduce;
 @end
 
