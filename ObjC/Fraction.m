@@ -50,4 +50,12 @@
     return denominator;
 }
 
+- (double) convertNum
+{
+    if(denominator !=0)
+        return (double) numerator /denominator;
+    else
+        return NAN;
+}
+
 @end

@@ -19,6 +19,7 @@
 
 - (int) numerator;
 - (int) denominator;
+- (double) convertNum;
 @end
 
 #endif /* Fraction_h */

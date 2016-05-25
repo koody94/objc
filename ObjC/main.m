@@ -7,20 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Calculator.h"
+#import "Fraction.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Fraction *aFraction = [[Fraction alloc]init];
+        Fraction *bFraction = [[Fraction alloc]init];
         
-        int number;
+        [aFraction setNumberator:1];
+        [aFraction setDenominator:4];
         
-        NSLog(@"Type in your number: ");
-        scanf("%i",&number);
+        [aFraction print];
+        NSLog(@" =");
+        NSLog(@"%g",[aFraction convertNum]);
         
-        if(number <0)
-            number = -number;
+        [bFraction print];
+        NSLog(@" =");
+        NSLog(@"%g",[bFraction convertNum]);
         
-        NSLog(@"The absolute value is %i",number);
 
     }
     return 0;
