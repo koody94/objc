@@ -12,7 +12,7 @@
 
 @synthesize width, height;
 
-- (void) setWith:(int)w andHeight : (int) h
+- (void)setWith:(int)w andHeight:(int)h
 {
     width=w;
     height=h;

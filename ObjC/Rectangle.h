@@ -14,5 +14,6 @@
 
 - (int) area;
 - (int) perimeter;
+- (void) setWith:(int)w andHeight:(int)h;
 
 @end
