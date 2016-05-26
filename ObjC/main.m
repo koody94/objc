@@ -15,49 +15,26 @@
 #import "XYPoint.h"
 #import "ClassC.h"
 #import "ClassD.h"
+#import "ClassE.h"
 #import "Complex.h"
+
+int gGlobalVar=5;
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Fraction *a=[[Fraction alloc]init];
-        Fraction *b=[[Fraction alloc]init];
-        Fraction *result;
+        ClassE *classE = [[ClassE alloc]init];
         
-        [a setTo:1 over:3];
-        [b setTo:2 over:5];
+        [classE methodE];
+        [classE methodE];
+        [classE methodE];
+        [classE methodE];
         
-        [a print];
-        NSLog(@"  +");
-        [b print];
-        NSLog(@"-----");
-        result = [a add:b];
-        [result print];
-        NSLog(@"\n");
+        ClassE *classE1 = [[ClassE alloc]init];
+        ClassE *classE2 = [[ClassE alloc]init];
+        ClassE *classE3 = [[ClassE alloc]init];
         
-        [a print];
-        NSLog(@"  -");
-        [b print];
-        NSLog(@"-----");
-        result = [a sub:b];
-        [result print];
-        NSLog(@"\n");
+        NSLog(@"====> %i",gGlobalVar);
         
-        [a print];
-        NSLog(@"  *");
-        [b print];
-        NSLog(@"-----");
-        result = [a mul:b];
-        [result print];
-        NSLog(@"\n");
-        
-        [a print];
-        NSLog(@"  /");
-        [b print];
-        NSLog(@"-----");
-        result = [a div:b];
-        [result print];
-        NSLog(@"\n");
-
     }
     return 0;
 }
