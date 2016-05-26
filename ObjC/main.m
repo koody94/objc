@@ -19,67 +19,45 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Square *mySquare =[[Square alloc]init];
+        Fraction *a=[[Fraction alloc]init];
+        Fraction *b=[[Fraction alloc]init];
+        Fraction *result;
         
-        if([mySquare isMemberOfClass:[Square class]] == YES)
-        {
-            NSLog(@"mysquare is a member of Square class");
-        }
+        [a setTo:1 over:3];
+        [b setTo:2 over:5];
         
-        if([mySquare isMemberOfClass:[Rectangle class]] == YES)
-        {
-            NSLog(@"mysquare is a member of Rectangle class");
-        }
+        [a print];
+        NSLog(@"  +");
+        [b print];
+        NSLog(@"-----");
+        result = [a add:b];
+        [result print];
+        NSLog(@"\n");
         
-        if([mySquare isMemberOfClass:[NSObject class]] == YES)
-        {
-            NSLog(@"mysquare is a member of NSObject class");
-        }
+        [a print];
+        NSLog(@"  -");
+        [b print];
+        NSLog(@"-----");
+        result = [a sub:b];
+        [result print];
+        NSLog(@"\n");
         
-        if([mySquare isKindOfClass:[Square class]] == YES)
-        {
-            NSLog(@"mysquare is a kind of Square class");
-        }
+        [a print];
+        NSLog(@"  *");
+        [b print];
+        NSLog(@"-----");
+        result = [a mul:b];
+        [result print];
+        NSLog(@"\n");
         
-        if([mySquare isKindOfClass:[Rectangle class]] == YES)
-        {
-            NSLog(@"mysquare is a kind of Rectangle class");
-        }
-        
-        if([mySquare isKindOfClass:[NSObject class]] == YES)
-        {
-            NSLog(@"mysquare is a kind of NSObject class");
-        }
-        
-        if([mySquare respondsToSelector:@selector(setSide:)] == YES)
-        {
-            NSLog(@"mysquare responds to setSide: method");
-        }
-        
-        if([mySquare respondsToSelector:@selector(setWith:andHeight:)] == YES)
-        {
-            NSLog(@"mysquare responds to setWidth:andHeight: method");
-        }
-        
-        if([Square respondsToSelector:@selector(alloc)] == YES)
-        {
-            NSLog(@"Square responds to alloc method");
-        }
-        
-        if([Rectangle instancesRespondToSelector:@selector(setSide:)] == YES)
-        {
-            NSLog(@"Instances of Rectangle respond to setSide: method");
-        }
-        
-        if([Square instancesRespondToSelector:@selector(setSide:)] == YES)
-        {
-            NSLog(@"Instances of Square respond to setSide: method");
-        }
-        
-        if([Square isSubclassOfClass:[Rectangle class]] == YES)
-        {
-            NSLog(@"Square is a subclass of a rectangle");
-        }
+        [a print];
+        NSLog(@"  /");
+        [b print];
+        NSLog(@"-----");
+        result = [a div:b];
+        [result print];
+        NSLog(@"\n");
+
     }
     return 0;
 }
