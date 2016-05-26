@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ClassC.h"
 
 @interface ClassD : NSObject
-
+{
+    ClassC *classC;
+}
+- (void) testMethodD;
+- (void) setClassC:(ClassC *)aIns;
 @end

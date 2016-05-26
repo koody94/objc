@@ -7,7 +7,19 @@
 //
 
 #import "ClassD.h"
+#import "ClassC.h"
 
 @implementation ClassD
 
+- (void) testMethodD
+{
+    NSLog(@"testMethodD");
+    if(classC)
+        [classC newMethodC];
+    
+}
+
+- (void) setClassC:(ClassC *)aIns{
+    classC=aIns;
+}
 @end

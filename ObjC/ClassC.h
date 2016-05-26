@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ClassC : NSObject
-
+- (void) testMethodC;
+- (void) newMethodC;
 @end

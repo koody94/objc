@@ -13,24 +13,14 @@
 #import "Rectangle.h"
 #import "Square.h"
 #import "XYPoint.h"
+#import "ClassC.h"
+#import "ClassD.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        ClassC *classC=[[ClassC alloc]init];
+        [classC testMethodC];
         
-        Rectangle *myRect = [[Rectangle alloc]init];
-        XYPoint *myPoint = [[XYPoint alloc]init];
-        
-        [myPoint setX:100 andY:200];
-        
-        [myRect setWith:5 andHeight:8];
-        
-        myRect.origin=myPoint;
-        
-        NSLog(@"Origin at (%i, %i)",myRect.origin.x, myRect.origin.y);
-        
-        [myPoint setX:50 andY:50];
-        
-        NSLog(@"Origin at (%i, %i)",myRect.origin.x, myRect.origin.y);
     }
     return 0;
 }

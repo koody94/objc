@@ -7,7 +7,20 @@
 //
 
 #import "ClassC.h"
+#import "ClassD.h"
 
 @implementation ClassC
+- (void) testMethodC
+{
+    NSLog(@"testMethodC");
+    
+    ClassD *classD=[[ClassD alloc]init];
+    [classD setClassC: self];
+    [classD testMethodD];
+}
 
+- (void) newMethodC
+{
+    NSLog(@"newMethodC");
+}
 @end
