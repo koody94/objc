@@ -1,5 +1,5 @@
 //
-//  ClassA.h
+//  Rectangle.h
 //  ObjC
 //
 //  Created by MF839-013 on 2016. 5. 26..
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ClassA : NSObject
-{
-    int x;
-}
+@interface Rectangle : NSObject
 
-- (void) initVar;
+@property int width, height;
+
+- (int) area;
+- (int) perimeter;
 
 @end

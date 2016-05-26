@@ -9,8 +9,19 @@
 #import "ClassB.h"
 
 @implementation ClassB
+
 - (void) printVar
 {
     NSLog(@"x=%i",x);
+}
+
+- (void) initVar{
+    [super initVar];
+    NSLog(@"Class B initVar");
+}
+
+- (void) privateMethod
+{
+    NSLog(@"Class B Private Method.");
 }
 @end

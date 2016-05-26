@@ -13,10 +13,10 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        
         ClassB *b=[[ClassB alloc]init];
         
         [b initVar];
-        [b printVar];
         
     }
     return 0;

@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA06BB2F1CF43E0B00D40F8A /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06BB2E1CF43E0B00D40F8A /* Fraction.m */; };
+		CA06BB321CF43F2300D40F8A /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = CA06BB311CF43F2300D40F8A /* Calculator.m */; };
 		CA36372E1CF3EDB7001ADA3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA36372D1CF3EDB7001ADA3B /* main.m */; };
+		CAFD8F6D1CF67D9C00E1B2CF /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F6C1CF67D9C00E1B2CF /* ClassA.m */; };
+		CAFD8F701CF67E0300E1B2CF /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */; };
+		CAFD8F731CF68D9100E1B2CF /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F721CF68D9100E1B2CF /* Rectangle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA06BB2D1CF43DDD00D40F8A /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CA06BB2E1CF43E0B00D40F8A /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		CA06BB301CF43F2300D40F8A /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		CA06BB311CF43F2300D40F8A /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		CA36372A1CF3EDB7001ADA3B /* ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA36372D1CF3EDB7001ADA3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFD8F6B1CF67D9C00E1B2CF /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		CAFD8F6C1CF67D9C00E1B2CF /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		CAFD8F6E1CF67E0300E1B2CF /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		CAFD8F711CF68D9100E1B2CF /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		CAFD8F721CF68D9100E1B2CF /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				CA36372D1CF3EDB7001ADA3B /* main.m */,
+				CAFD8F6E1CF67E0300E1B2CF /* ClassB.h */,
+				CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */,
+				CAFD8F711CF68D9100E1B2CF /* Rectangle.h */,
+				CAFD8F721CF68D9100E1B2CF /* Rectangle.m */,
+				CA06BB2D1CF43DDD00D40F8A /* Fraction.h */,
+				CA06BB2E1CF43E0B00D40F8A /* Fraction.m */,
+				CA06BB301CF43F2300D40F8A /* Calculator.h */,
+				CA06BB311CF43F2300D40F8A /* Calculator.m */,
+				CAFD8F6B1CF67D9C00E1B2CF /* ClassA.h */,
+				CAFD8F6C1CF67D9C00E1B2CF /* ClassA.m */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -118,7 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA06BB321CF43F2300D40F8A /* Calculator.m in Sources */,
 				CA36372E1CF3EDB7001ADA3B /* main.m in Sources */,
+				CAFD8F6D1CF67D9C00E1B2CF /* ClassA.m in Sources */,
+				CA06BB2F1CF43E0B00D40F8A /* Fraction.m in Sources */,
+				CAFD8F701CF67E0300E1B2CF /* ClassB.m in Sources */,
+				CAFD8F731CF68D9100E1B2CF /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +239,7 @@
 		CA3637321CF3EDB7001ADA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +247,7 @@
 		CA3637331CF3EDB7001ADA3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +271,7 @@
 				CA3637331CF3EDB7001ADA3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
