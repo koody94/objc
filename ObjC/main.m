@@ -11,16 +11,18 @@
 #import "Calculator.h"
 #import "ClassB.h"
 #import "Rectangle.h"
+#import "Square.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Rectangle *myRect = [[Rectangle alloc]init];
+        Square *mySquare = [[Square alloc]init];
         
-        [myRect setWith:5 andHeight:8];
+        [mySquare setSide:5];
         
-        NSLog(@"Rectangle: w=%i, h=%i", myRect.width,myRect.height);
-        NSLog(@"Area=%i,perimeter=%i",[myRect area],[myRect perimeter]);
+        NSLog(@"Square s=%i",[mySquare side]);
+        NSLog(@"Area = %i, Permeter =%i",
+              [mySquare area], [mySquare perimeter]);
         
     }
     return 0;
