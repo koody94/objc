@@ -13,6 +13,10 @@
 		CAFD8F6D1CF67D9C00E1B2CF /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F6C1CF67D9C00E1B2CF /* ClassA.m */; };
 		CAFD8F701CF67E0300E1B2CF /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */; };
 		CAFD8F731CF68D9100E1B2CF /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F721CF68D9100E1B2CF /* Rectangle.m */; };
+		CAFD8F761CF6909700E1B2CF /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F751CF6909700E1B2CF /* Square.m */; };
+		CAFD8F7C1CF6991800E1B2CF /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F7B1CF6991800E1B2CF /* XYPoint.m */; };
+		CAFD8F7F1CF6B3BF00E1B2CF /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F7E1CF6B3BF00E1B2CF /* ClassC.m */; };
+		CAFD8F821CF6B3CD00E1B2CF /* ClassD.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFD8F811CF6B3CD00E1B2CF /* ClassD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +44,14 @@
 		CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
 		CAFD8F711CF68D9100E1B2CF /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		CAFD8F721CF68D9100E1B2CF /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		CAFD8F741CF6909700E1B2CF /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		CAFD8F751CF6909700E1B2CF /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		CAFD8F7A1CF6991800E1B2CF /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
+		CAFD8F7B1CF6991800E1B2CF /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		CAFD8F7D1CF6B3BF00E1B2CF /* ClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
+		CAFD8F7E1CF6B3BF00E1B2CF /* ClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassC.m; sourceTree = "<group>"; };
+		CAFD8F801CF6B3CD00E1B2CF /* ClassD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassD.h; sourceTree = "<group>"; };
+		CAFD8F811CF6B3CD00E1B2CF /* ClassD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				CA36372D1CF3EDB7001ADA3B /* main.m */,
+				CAFD8F741CF6909700E1B2CF /* Square.h */,
+				CAFD8F751CF6909700E1B2CF /* Square.m */,
 				CAFD8F6E1CF67E0300E1B2CF /* ClassB.h */,
 				CAFD8F6F1CF67E0300E1B2CF /* ClassB.m */,
 				CAFD8F711CF68D9100E1B2CF /* Rectangle.h */,
@@ -82,7 +96,13 @@
 				CA06BB301CF43F2300D40F8A /* Calculator.h */,
 				CA06BB311CF43F2300D40F8A /* Calculator.m */,
 				CAFD8F6B1CF67D9C00E1B2CF /* ClassA.h */,
+				CAFD8F7D1CF6B3BF00E1B2CF /* ClassC.h */,
+				CAFD8F7E1CF6B3BF00E1B2CF /* ClassC.m */,
+				CAFD8F801CF6B3CD00E1B2CF /* ClassD.h */,
+				CAFD8F811CF6B3CD00E1B2CF /* ClassD.m */,
 				CAFD8F6C1CF67D9C00E1B2CF /* ClassA.m */,
+				CAFD8F7A1CF6991800E1B2CF /* XYPoint.h */,
+				CAFD8F7B1CF6991800E1B2CF /* XYPoint.m */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -145,10 +165,14 @@
 			files = (
 				CA06BB321CF43F2300D40F8A /* Calculator.m in Sources */,
 				CA36372E1CF3EDB7001ADA3B /* main.m in Sources */,
+				CAFD8F7F1CF6B3BF00E1B2CF /* ClassC.m in Sources */,
 				CAFD8F6D1CF67D9C00E1B2CF /* ClassA.m in Sources */,
+				CAFD8F761CF6909700E1B2CF /* Square.m in Sources */,
+				CAFD8F821CF6B3CD00E1B2CF /* ClassD.m in Sources */,
 				CA06BB2F1CF43E0B00D40F8A /* Fraction.m in Sources */,
 				CAFD8F701CF67E0300E1B2CF /* ClassB.m in Sources */,
 				CAFD8F731CF68D9100E1B2CF /* Rectangle.m in Sources */,
+				CAFD8F7C1CF6991800E1B2CF /* XYPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,12 @@
 
 - (void) setOrigin:(XYPoint *)pt
 {
-    origin=pt;
+//    origin=pt;
+    if(!origin)
+        origin=[[XYPoint alloc]init];
+    
+    origin.x=pt.x;
+    origin.y=pt.y;
 }
 
 - (XYPoint *) origin
